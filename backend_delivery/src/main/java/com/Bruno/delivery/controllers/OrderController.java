@@ -1,10 +1,8 @@
 package com.Bruno.delivery.controllers;
 
 import java.net.URI;
-import java.security.Provider.Service;
 import java.util.List;
 
-import org.hibernate.integrator.spi.ServiceContributingIntegrator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -44,6 +42,4 @@ public class OrderController {
 		OrderDTO dto = service.setDelivered(id);
 		return ResponseEntity.ok().body(dto);
 	}
-	
-
 }
