@@ -1,8 +1,12 @@
 package com.Bruno.delivery.dto;
 
+import java.io.Serializable;
+
 import com.Bruno.delivery.entities.Product;
 
-public class ProductDTO {
+public class ProductDTO implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
 	private Long id;
 	private String name;
